@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import { useState } from 'react'
+import { Header } from '../components/Header/Header'
 
 export default function Home() {
 
@@ -14,7 +15,7 @@ export default function Home() {
         <title> | ig.news</title>
     </Head>
 
-      <h1>ola mundo</h1>
+      <Header />
       
     </>
   )
