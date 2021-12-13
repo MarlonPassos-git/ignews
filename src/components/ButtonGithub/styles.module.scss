@@ -1,0 +1,46 @@
+.container {
+    width: 218px;
+    height: 48px;
+    border-radius: 24px;
+    background-color: var(--cyan-900);
+    border: none;
+    margin-left: auto;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        opacity: 0.9;
+    }
+
+    span {
+        margin-left: 16px;
+        color: var(--gray-100);
+
+    }
+
+    svg {
+        height: 22px;
+        width: 22px;
+    }
+
+    
+}
+
+.x {
+    border: none;
+    background: none;
+    margin-left: 21px;
+
+    svg {
+        padding: 0;
+        height: 28px;
+        width: 28px;
+    }
+
+   
+        
+    
+}

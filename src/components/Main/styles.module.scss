@@ -1,0 +1,56 @@
+@import "../../styles/base";
+
+.container {
+
+
+    @include paddingContainer;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    height: calc(100vh - #{$headerHeight});
+
+
+    h1 {
+        font-weight: 900;
+        font-size: 72px;
+        line-height: 72px;
+        color: #FFFFFF;
+        margin-bottom: 24px;
+    }
+
+    p:first-child {
+        display: flex;
+        gap: 16px;
+        margin-bottom: 40px;
+    }
+
+    p {
+        font-weight: bold;
+        font-size: 24px;
+        line-height: 34px;
+        color: #E1E1E6;
+
+
+    }
+
+
+    span {
+        color: #61DCFB;
+    }
+
+    
+}
+
+.palmas {
+    width: 24px;
+    height: 24px;
+
+    background-image: url('/images/palmas.png');
+}
+
+.img {
+    justify-self: center;
+    max-width: 334px;
+    max-height: 520px;
+    width: auto;
+}

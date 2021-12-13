@@ -1,4 +1,5 @@
 import React from 'react'
+import ButtonGithub from '../ButtonGithub/ButtonGithub'
 import styles from './styles.module.scss'
 
 export function Header() {
@@ -7,9 +8,10 @@ export function Header() {
             
                 <img src="/images/logo.svg" alt="Logo ig.news" />
                 <nav>
-                <a className={ styles.navAtive}>Home</a>
+                    <a className={ styles.navAtive}>Home</a>
                     <a>Posts</a>
                 </nav>
+                <ButtonGithub />
             
         </header>
     )

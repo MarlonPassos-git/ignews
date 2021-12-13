@@ -12,14 +12,23 @@
     --gray-300: #a8a8b3;
     --gray-800: #29292E;
     --gray-900: #121214;
+    --blue-500: #737380;
+    
     
     --cyan-500: #61dafb;
-    --yellow-500: #eba417
+    --cyan-900: #1F2729;
+    --yellow-500: #eba417;
+    --green-500: #04D361;
 }
 
 body {
     background-color: var(--gray-900);
     color: var(--white);
+}
+
+#__next {
+    min-width: 100vw;
+    min-height: 100vh;
 }
 
 body, input, select, textarea, button {
@@ -36,3 +45,5 @@ a {
     color: inherit;
     text-decoration: none;
 }
+
+

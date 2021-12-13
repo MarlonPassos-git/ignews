@@ -1,0 +1,22 @@
+// Function and Mixins
+$REM: 16;
+
+@function Rem(  $number, $reminPX: $REM) {
+     $value: calc($number /  $reminPX);
+    
+    @return $value * 1rem
+}
+
+
+@mixin paddingContainer { 
+    padding: 0 167px;
+
+    @media (min-width: 1440px) {
+        padding: 0 calc((100vw - 1440px) / 2 + 167px);
+    }
+}
+
+
+// Sizes 
+
+    $headerHeight: 80px;

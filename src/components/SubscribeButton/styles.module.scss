@@ -1,0 +1,20 @@
+@import "../../styles/base.scss";
+
+.container {
+        width: Rem(260);
+        height: 64px;
+        background: var(--yellow-500);
+        border-radius: 100px;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 23px;
+        border: none;
+        color: #121214;
+        margin-top: 40px;
+
+
+        &:hover {
+            background: lighten(#eba417, 10%);
+            color: lighten(#121214, 10%);
+        }
+    }
