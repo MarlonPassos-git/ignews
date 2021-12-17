@@ -16,6 +16,11 @@ interface HomeProps {
 
 export default function Home({ product}: HomeProps) {
 
+  fetch('http://localhost:3000/api/users/12/30  ')
+    .then(res => res)
+    .then(data => console.log(data))
+  
+  
   return (
     <>
     <Head>
@@ -38,8 +43,6 @@ export const getStaticProps: GetStaticProps = async () => {
   const price = await stripe.prices.retrieve('price_1K5kSCEh7YFjIusGS4CT1SZw', { 
     expand: ['product'],
   })
-
-  console.log('ola')
 
   const product = {
     priceId: price.id,
